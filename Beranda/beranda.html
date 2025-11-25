@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laboratorium Biosain</title>
 <link rel="stylesheet" href="styles.css"> 
+<link rel="stylesheet" href="fasilitas.css">
+
 </head>
 <body>
 
 <nav class="navbar">
     <div class="navbar-left">
-        <img src="/img/Beranda/logo.svg" alt="Logo" class="logo">
+        <img src="/Beranda/img/Beranda/logo.svg" alt="Logo" class="logo">
         <div class="brand">
             <span class="title">Pusat UPA Laboratorium Biosain</span>
             <span class="subtitle">Politeknik Negeri Jember</span>
@@ -41,16 +43,44 @@
 <section class="hero">
     <div class="hero-content">
         <h1>PUSAT UPA Lab Biosain</h1>
-        <p>Selamat datang di laboratorium Biosain, Politeknik Negeri Jember. Saya harap Anda mendapatkan informasi <br>dalam menjelajahi situs web kami mengenai profile lab, layanan, dan menemukan berbagai aspek yang tersedia termasuk informasi kontak laboratorium.</p>
+        <p>
+            Selamat datang di laboratorium Biosain, Politeknik Negeri Jember. 
+            Saya harap Anda mendapatkan informasi dalam menjelajahi situs web kami mengenai profil lab, layanan, 
+            dan menemukan berbagai aspek yang tersedia termasuk informasi kontak laboratorium.
+        </p>
     </div>
 </section>
 
-<div class="container-semua">
-    
-    <section class="layanan-kami">
-        <h2>Layanan Kami</h2>
-        <p>Baik Anda lembaga penelitian, laboratorium yang sedang berkembang, atau produsen skala kecil, layanan pengujian biosain dirancang untuk beradaptasi dengan alur kerja, kapasitas, dan kebutuhan analitis spesifik Anda.</p>
-    
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/Beranda/img/Beranda/analisi.svg" alt="Tentang">
+            </div>
+            
+            <div class="about-text">
+                <h2>Tentang Laboratorium Biosain</h2>
+                <p>
+                    Laboratorium Biosain Politeknik Negeri Jember merupakan pusat layanan penelitian dan pengujian ilmiah yang berfokus pada bidang biologi, kimia, dan ilmu terapan lainnya. Dengan fasilitas modern dan tenaga ahli yang berkompeten, laboratorium ini hadir untuk mendukung kegiatan akademik, riset, serta pengembangan inovasi di bidang biosains.
+                </p>
+                <p>
+                    Kami berkomitmen untuk memberikan hasil yang akurat dan tepat waktu dengan menggunakan 
+                    teknologi terkini dan metode yang telah terstandarisasi secara internasional.
+                </p>
+
+                <a href="tentang.html" class="tombol">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layanan">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="title">Layanan Kami</h2>
+            <p class="subtitle">Baik Anda lembaga penelitian, laboratorium yang sedang berkembang, atau produsen skala kecil, layanan pengujian biosain dirancang untuk beradaptasi dengan alur kerja, kapasitas, dan kebutuhan analitis spesifik Anda.</p>
+        </header>
+        
         <div class="card-container">
             <div class="card">
                 <div class="icon">🔬</div>
@@ -58,14 +88,14 @@
                 <p>Metode ini digunakan untuk mendeteksi dan mengukur antibodi, antigen, protein, dan hormon secara spesifik. Proses pengujian dilakukan dengan teknik imunologi yang sangat sensitif. Hasilnya akurat dan cocok untuk kebutuhan riset maupun diagnostik laboratorium.</p>
                 <a href="#" class="tombol">Selengkapnya</a>
             </div>
-
+            
             <div class="card">
                 <div class="icon">🧬</div>
                 <h3>Pengujian Mikrobiologi</h3>
                 <p>Pengujian ini bertujuan mengidentifikasi mikroorganisme pada sampel secara tepat. Proses dilakukan dengan kultur, pewarnaan, dan metode laboratorium lainnya. Layanan ini penting untuk memastikan keamanan, mutu, dan standar produk.</p>
                 <a href="#" class="tombol">Selengkapnya</a>
             </div>
-
+            
             <div class="card">
                 <div class="icon">🧪</div>
                 <h3>Konsultasi riset</h3>
@@ -73,13 +103,55 @@
                 <a href="#" class="tombol">Selengkapnya</a>
             </div>
         </div>
-    </section>
-    
-    <section class="keahlian-kami">
-        <h2>Keahlian Kami</h2>
-        <p class="intro-text">
-            Dari sampel hingga validasi ilmiah, layanan laboratorium kami bekerja sama untuk memberikan para peneliti, industri, dan produsen kejelasan, keakuratan, dan keyakinan yang mereka butuhkan dalam setiap tahap analisis.
-        </p>
+    </div>
+</section>
+<section class="facilities-section">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="title">Fasilitas Modern</h2>
+            <p class="subtitle">
+                Dilengkapi dengan peralatan laboratorium terkini untuk hasil testing yang optimal
+            </p>
+        </header>
+
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <img src="/Beranda/img/Beranda/fasilitas.svg" 
+                     alt="Peralatan Laboratorium" 
+                     class="facility-image">
+                <h3 class="facility-title">Peralatan Canggih</h3>
+            </div>
+
+            <div class="facility-card">
+                <img src="/Beranda/img/Beranda/fasilitas.svg" 
+                     alt="Ruang Testing" 
+                     class="facility-image">
+                <h3 class="facility-title">Ruang Testing Steril</h3>
+            </div>
+
+            <div class="facility-card">
+                <img src="/Beranda/img/Beranda/fasilitas.svg" 
+                     alt="Laboratorium Mikrobiologi" 
+                     class="facility-image">
+                <h3 class="facility-title">Lab Mikrobiologi</h3>
+            </div>
+        </div>
+
+        <div class="section-action">
+            <a href="fasilitas.html" class="btn-primary">Lihat Semua Fasilitas</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- <section class="skills">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="title">Keahlian Kami</h2>
+            <p class="subtitle intro-text">
+                Dari sampel hingga validasi ilmiah, layanan laboratorium kami bekerja sama untuk memberikan para peneliti, industri, dan produsen kejelasan, keakuratan, dan keyakinan yang mereka butuhkan dalam setiap tahap analisis.
+            </p>
+        </header>
         
         <div class="main-card card-pink">
             <div class="content-area">
@@ -98,11 +170,11 @@
                 </div>
             </div>
             <div class="image-area">
-                <img src="/img/Beranda/analisi.svg" alt="Seorang peneliti melakukan analisis di laboratorium">
+                <img src="/Beranda/img/Beranda/analisi.svg" alt="Seorang peneliti melakukan analisis di laboratorium">
             </div>
         </div>
 
-        <div class="main-card card-red reverse-layout"> 
+        <div class="main-card reverse-layout card-red"> 
             <div class="content-area">
                 <h2>Laboratorium & Fasilitas</h2>
                 <p class="deskripsi-utama">Fasilitas laboratorium lengkap dengan peralatan berstandar internasional dan lingkungan terkontrol untuk memastikan hasil uji yang andal.</p>
@@ -119,7 +191,7 @@
                 </div>
             </div>
             <div class="image-area">
-                <img src="/img/Beranda/fasilitas.svg" alt="Peralatan laboratorium presisi">
+                <img src="/Beranda/img/Beranda/fasilitas.svg" alt="Peralatan laboratorium presisi">
             </div>
         </div>
         
@@ -146,40 +218,90 @@
                 </div>
             </div>
             <div class="image-area">
-                <img src="/img/Beranda/publikasi.svg" alt="Peneliti sedang menganalisis data untuk publikasi ilmiah">
+                <img src="/Beranda/img/Beranda/publikasi.svg" alt="Publikasi">
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section> -->
 
-<div class="faq">
-    <h2>Pertanyaan Umum</h2>
-    <details>
-        <summary>Apa itu laboratoium biosain?</summary>
-        <p>Lab Biosain adalah laboratorium yang digunakan untuk kegiatan penelitian, praktikum, dan pengembangan ilmu biologi serta sains terkait. Di dalamnya tersedia fasilitas untuk eksperimen mikrobiologi, bioteknologi, genetika, dan ekologi.</p>
-    </details>
-    
-    <details>
-        <summary>Siapa saja yang bisa menggunakan Lab Biosain?</summary>
-        <p>Lab ini dapat digunakan oleh mahasiswa, dosen, dan peneliti yang memiliki kepentingan akademik atau riset. Penggunaan biasanya harus melalui prosedur peminjaman atau jadwal resmi yang ditetapkan oleh pengelola laboratorium.</p>
-    </details>
-    
-    <details>
-        <summary>Apa saja aturan keselamatan di Lab Biosain?</summary>
-        <p>Wajib menggunakan alat pelindung diri (jas lab, sarung tangan, masker).
-        Tidak diperbolehkan makan atau minum di dalam laboratorium.
-        Semua bahan kimia dan biologi harus ditangani sesuai SOP.
-        Peralatan harus dikembalikan dalam kondisi bersih dan rapi setelah digunakan.</p>
-    </details>
-</div>
+<section class="faq-section">
+    <div class="faq">
+        <h2>Pertanyaan Umum</h2>
+        <details>
+            <summary>Apa itu laboratoium biosain?</summary>
+            <p>Lab Biosain adalah laboratorium yang digunakan untuk kegiatan penelitian, praktikum, dan pengembangan ilmu biologi serta sains terkait. Di dalamnya tersedia fasilitas untuk eksperimen mikrobiologi, bioteknologi, genetika, dan ekologi.</p>
+        </details>
+        
+        <details>
+            <summary>Siapa saja yang bisa menggunakan Lab Biosain?</summary>
+            <p>Lab ini dapat digunakan oleh mahasiswa, dosen, dan peneliti yang memiliki kepentingan akademik atau riset. Penggunaan biasanya harus melalui prosedur peminjaman atau jadwal resmi yang ditetapkan oleh pengelola laboratorium.</p>
+        </details>
+        
+        <details>
+            <summary>Apa saja aturan keselamatan di Lab Biosain?</summary>
+            <p>Wajib menggunakan alat pelindung diri (jas lab, sarung tangan, masker).
+            Tidak diperbolehkan makan atau minum di dalam laboratorium.
+            Semua bahan kimia dan biologi harus ditangani sesuai SOP.
+            Peralatan harus dikembalikan dalam kondisi bersih dan rapi setelah digunakan.</p>
+        </details>
+    </div>
+</section>
 
-<!-- Footer -->
- <footer>
+<section class="testimonials-section"> 
+    <div class="container">
+        <header class="section-header">
+            <h2 class="title">Testimoni Klien</h2>
+            <p class="subtitle">
+                Kepuasan klien adalah prioritas utama kami. Berikut adalah apa yang mereka katakan tentang layanan kami
+            </p>
+        </header>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-text">
+                    "Laboratorium Biosain telah menjadi mitra terpercaya kami selama 5 tahun. Hasil testing yang akurat 
+                    dan layanan customer service yang responsif membuat kami percaya untuk terus bermitra dengan mereka."
+                </p>
+                <div class="testimonial-author">
+                    <h4 class="author-name">Dr. Agus Suryanto</h4>
+                    <p class="author-role">Kepala Riset, Universitas Terpadu</p>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-text">
+                    "Fasilitas modern dan tim profesional Biosain memberikan hasil yang luar biasa akurat. 
+                    Kami sangat puas dengan kecepatan penyelesaian testing dan laporan yang detail."
+                </p>
+                <div class="testimonial-author">
+                    <h4 class="author-name">Ir. Budi Hartono</h4>
+                    <p class="author-role">Manager Produksi, PT Makanan Berkualitas</p>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-rating">★★★★★</div>
+                <p class="testimonial-text">
+                    "Layanan testing air dari Biosain sangat membantu kami dalam memastikan kualitas air 
+                    untuk proses produksi. Harga kompetitif dengan kualitas terjamin."
+                </p>
+                <div class="testimonial-author">
+                    <h4 class="author-name">Siti Nurhaliza</h4>
+                    <p class="author-role">Direktur Operasional, PT Maju Jaya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
     <div class="footer-container">
 
         <div class="footer-col kontak">
             <div class="logo-group">
-                <img src="/img/Beranda/logo.svg" alt="Logo UPA Lab Biosain" class="footer-logo"> 
+                <img src="/Beranda/img/Beranda/logo.svg" alt="Logo UPA Lab Biosain" class="footer-logo"> 
                 <div class="brand-footer">
                     <span class="title-footer">Pusat UPA Laboratorium Biosain</span>
                     <span class="subtitle-footer">Politeknik Negeri Jember</span>
