@@ -1,0 +1,38 @@
+ .page-header {
+            background: linear-gradient(79deg, #ff0000, #ffffff);
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 25px 25px;
+            margin-bottom: 40px;
+        }
+
+        .pub-card {
+            border: none;
+            border-radius: 18px;
+            padding: 25px;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            transition: all .25s ease;
+        }
+
+        .pub-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .pub-title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: #1a1a1a;
+        }
+
+        .pub-meta {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .btn-download {
+            border-radius: 12px;
+            padding: 8px 18px;
+        }
