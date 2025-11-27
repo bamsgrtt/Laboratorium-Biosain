@@ -1,38 +1,58 @@
- .page-header {
-            background: linear-gradient(79deg, #ff0000, #ffffff);
-            padding: 60px 20px;
-            color: white;
-            text-align: center;
-            border-radius: 0 0 25px 25px;
-            margin-bottom: 40px;
-        }
+.page-header {
+    background: url('/assets/img/hero.svg') center center no-repeat fixed;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 40px;
+    background-size: cover;
+    position: relative; /* penting supaya overlay ::before bisa muncul di belakang */
+}
 
-        .pub-card {
-            border: none;
-            border-radius: 18px;
-            padding: 25px;
-            background: white;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            transition: all .25s ease;
-        }
+/* Overlay merah di latar belakang */
+.page-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 0, 0, 0.30);
+    z-index: -1;
+    border-radius: 0 0 25px 25px; /* sesuaikan radius overlay sama header */
+}
 
-        .pub-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-        }
+.pub-card {
+    border: none;
+    border-radius: 18px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: all .25s ease;
+}
 
-        .pub-title {
-            font-weight: 600;
-            font-size: 1.25rem;
-            color: #1a1a1a;
-        }
+.pub-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
 
-        .pub-meta {
-            font-size: 0.9rem;
-            color: #6c757d;
-        }
+.pub-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+}
 
-        .btn-download {
-            border-radius: 12px;
-            padding: 8px 18px;
-        }
+.pub-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.btn-download {
+    border-radius: 12px;
+    padding: 8px 18px;
+    background-color: #ff0000; /* contoh agar sesuai tema header */
+    color: white;
+    border: none;
+    transition: background .25s ease;
+}
+
+.btn-download:hover {
+    background-color: #bf0000; /* lebih gelap saat hover */
+}
