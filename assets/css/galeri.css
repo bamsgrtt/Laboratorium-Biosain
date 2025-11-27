@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.gallery-title {
+    text-align: center;
+    width: 600px;
+    margin: 60px auto 20px auto; /* ganti posisi absolute */
+}
+
+.gallery-title h1 {
+    font-family: 'inter', bold;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: #000;
+    margin: 0;
+}
+
+.gallery-title p {
+    font-family: 'inter', bold;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 40px auto 100px auto; /* JARAK BAWAH agar footer tidak menempel */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 484px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #ECE6F0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+}
