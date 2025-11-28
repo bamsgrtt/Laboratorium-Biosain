@@ -16,3 +16,4 @@ document.addEventListener("DOMContentLoaded", () => {
         el.innerHTML = await res.text();
     });
 });
+
