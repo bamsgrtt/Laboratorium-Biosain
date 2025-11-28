@@ -8,8 +8,7 @@
     <!-- link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/kontak.css">
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="kontak.html">
+    <link rel="stylesheet" href="../assets/css/global.css">
 </head>
 
 <!-- Test -->
@@ -17,117 +16,94 @@
     <!-- navbar -->
     <div data-include="../partials/navbar.html"></div>
     
-
-<!-- TITLE -->
-<div class="text-center mt-4">
-    <h2 class="fw-bold text-dark">Kontak Laboratorium</h2>
-    <p class="text-muted">Hubungi kami untuk informasi lebih lanjut</p>
-</div>
-
-<!-- CONTACT FORM + WA BUTTONS -->
-<div class="container mt-4">
-    <div class="row g-4 justify-content-center">
-
-        <!-- FORM -->
-        <div class="col-md-4 box-shadow-custom p-4">
-            <input type="text" class="form-control mb-3" placeholder="Masukkan nama">
-            <input type="email" class="form-control mb-3" placeholder="Masukkan email">
-            <textarea class="form-control mb-3" placeholder="Sampaikan pesan anda..." style="height:100px"></textarea>
-            <button class="btn w-100 text-white fw-bold" style="background:#ff0000;">Kirim</button>
+<div class="container  my-5"> 
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">ContactLab</h1>
+            <p class="text-muted">Hubungi kami untuk informasi lebih lanjut atau konsultasi layanan laboratorium</p>
         </div>
         
-        <!-- WA BUTTONS -->
-        <div class="col-md-4 box-shadow-custom p-4">
-            <a href="https://api.whatsapp.com/send/?phone=%2B6285233397889&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-light border mb-3 w-100 fw-bold text-start">Wa Admin (Sampel & Sertifikat Hasil)</a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B6285233397889&text&type=phone_number&app_absent=0" class="btn btn-light border mb-3 w-100 fw-bold text-start">Wa Admin (Sewa Laboratorium)</a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B6281946628655&text&type=phone_number&app_absent=0"  class="btn btn-light border mb-3 w-100 fw-bold text-start">Wa Pelayanan Pelatihan & Konsultasi</a>
-
-            <img src="/assets/img/biosains.polije.2.png" class="img-fluid rounded mt-2">
+        <div class="shadow-box mb-5">
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="https://api.whatsapp.com/send/?phone=%2B6285233397889&text&type=phone_number&app_absent=0" class="service-button btn-red">Sampel & Sertifikat Hasil</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B6285233397889&text&type=phone_number&app_absent=0" class="service-button btn-red">Sewa Laboratorium</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B6281946628655&text&type=phone_number&app_absent=0" class="service-button btn-red">Pelayanan Pelatihan & Konsultasi</a>
+            </div>
         </div>
 
-    </div>
-</div>
-
-<!-- HUBUNGI KAclasMI -->
-<section class="text-center mt-5">
-    <h2 class="text-dark fw-bold" >Hubungi Kami</h2>
-    <div class="container mt-3">
-        <div class="row justify-content-center g-4">
-
-            <div class="col-md-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.437751756996!2d113.72109987460317!3d-8.168944983896154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd696f7ad9dd98f%3A0x8e302ff628f6ba26!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-                    class="rounded" width="100%" height="400"></iframe>
-            </div>
-
-            <div class="col-md-4 text-start">
-                <strong>Kantor:</strong><br>
-                Jl. Mastrip No.164, Lingkungan Panji, Tegalgede, Kec. Sumbersari,<br>
-                Kabupaten Jember, Jawa Timur 68121<br><br>
-
-                <strong>Jadwal:</strong><br>
-                Senin - Jumat<br><br>
-
-                <strong>Kontak Whatsapp:</strong><br>
-                089123456789<br><br>
-
-                <strong>Email:</strong><br>
-                labbiosain@polije.ac.id<br><br>
-
-                <strong>Website:</strong><br>
-                https://sites.polije.ac.id/labbiosain
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    <!-- FAQ -->
-    <section class="faq-section section-padding pt-5 pb-5 bg-soft">
-    <div class="container">
-        <h2 class="text-center fw-bold mb-4">Pertanyaan Umum</h2>
         
-        <div class="accordion mx-auto" id="faqAccordion">
+  
+            <h2 class="text-center fw-bold mb-4">Lokasi Kantor</h2>
             
-            <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
-                <h3 class="accordion-header" id="heading-1">
-                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">
-                        Apa itu laboratoium biosain?
+            <div class="row mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <iframe 
+                class="map-frame" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15796.883908854085!2d113.704975!3d-8.157833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695f26593f6bd%3A0x7d2872e4244f0b0!2sUniversitas%20Jember!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                allowfullscreen="" 
+                loading="lazy">
+                </iframe>
+            </div>
+            
+            <div class="col-md-6 office-info">
+                <p><strong>Fasilitas:</strong></p>
+                <p>Jl. Mandiri No.764, Lingkungan Pandi, Tegalgede, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121</p>
+                
+                <p class="mt-3"><strong>Jadwal:</strong></p>
+                <p>Senin - Jumat</p>
+                
+                <p class="mt-3"><strong>Kontak Whatsapp:</strong></p>
+                <p><a href="tel:089123456789" class="text-decoration-none text-dark">089123456789</a></p>
+                
+                <p class="mt-3"><strong>Email:</strong></p>
+                <p><a href="mailto:lab_biosain@email.co.id" class="text-decoration-none text-dark">lab_biosain@email.co.id</a></p>
+                
+                <p class="mt-3"><strong>Website:</strong></p>
+                <p><a href="https://lab_biosain.ac.id/biosain" target="_blank" class="text-decoration-none text-dark">https://lab_biosain.ac.id/biosain</a></p>
+            </div>
+        </div>
+
+        
+        <hr class="my-5">
+
+        <h2 class="text-center fw-bold mb-4">Pertanyaan Umum</h2>
+
+        <div class="accordion" id="faqAccordion">
+            
+            <div class="accordion-item mb-3 rounded-3 shadow-sm">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Apa itu laboratorium biosain?
                     </button>
-                </h3>
-                <div id="faq-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body text-muted">
-                        Lab Biosain adalah laboratorium yang digunakan untuk kegiatan penelitian, praktikum, dan pengembangan ilmu biologi serta sains terkait. Di dalamnya tersedia fasilitas untuk eksperimen mikrobiologi, bioteknologi, genetika, dan ekologi.
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Laboratorium Biosain adalah fasilitas penelitian dan layanan yang fokus pada ilmu-ilmu hayati, biologi molekuler, dan bioteknologi. (Isi jawaban dapat disesuaikan)
                     </div>
                 </div>
             </div>
-            
-            <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
-                <h3 class="accordion-header" id="heading-2">
-                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+
+            <div class="accordion-item mb-3 rounded-3 shadow-sm">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Siapa saja yang bisa menggunakan Lab Biosain?
                     </button>
-                </h3>
-                <div id="faq-2" class="accordion-collapse collapse"  aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body text-muted">
-                        Lab ini dapat digunakan oleh mahasiswa, dosen, dan peneliti yang memiliki kepentingan akademik atau riset. Penggunaan biasanya harus melalui prosedur peminjaman atau jadwal resmi yang ditetapkan oleh pengelola laboratorium.
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Fasilitas ini terbuka untuk mahasiswa, peneliti, industri, dan masyarakat umum yang membutuhkan layanan analisis, konsultasi, atau sewa alat laboratorium. (Isi jawaban dapat disesuaikan)
                     </div>
                 </div>
             </div>
-            
-            <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
-                <h3 class="accordion-header" id="heading-3">
-                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+
+            <div class="accordion-item mb-3 rounded-3 shadow-sm">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Apa saja aturan keselamatan di Lab Biosain?
                     </button>
-                </h3>
-                <div id="faq-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body text-muted">
-                        <ul>
-                            <li>Wajib menggunakan alat pelindung diri (jas lab, sarung tangan, masker).</li>
-                            <li>Tidak diperbolehkan makan atau minum di dalam laboratorium.</li>
-                            <li>Semua bahan kimia dan biologi harus ditangani sesuai SOP.</li>
-                            <li>Peralatan harus dikembalikan dalam kondisi bersih dan rapi setelah digunakan.</li>
-                        </ul>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Semua pengguna wajib mematuhi standar K3 (Keselamatan dan Kesehatan Kerja) di laboratorium, termasuk penggunaan APD, prosedur kerja standar, dan penanganan limbah yang benar. (Isi jawaban dapat disesuaikan)
                     </div>
                 </div>
             </div>
