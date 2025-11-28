@@ -1,99 +1,256 @@
-/* Colors */
-.text-red { color: #d80000; }
-.text-blue { color: #0033cc; }
+   :root {
+     --primary-red: #ff0000;
+     --primary-dark: #1D3557;
+     /* Biru Gelap */
+     --primary-light: #ffffff;
+     --yellow-accent: #ffea00;
+     --soft-bg: #f4f4f4;
+     --text-dark: #333333;
+     --text-light: #666666;
+   }
 
-/* HERO */
-.hero-section h1 {
-    line-height: 1.2;
-}
+   /* hero */
+   /* HERO */
+   .hero-section {
+     position: relative;
+     height: 100vh;
+     background: url('../img/hero.jpg') center/cover no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
 
-.decor-grid {
-    width: 120px;
-    height: 120px;
-    background: url("assets/decor.svg");
-    background-size: cover;
-    margin-top: 20px;
-}
+   .hero-section::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: rgba(255, 0, 0, 0.35);
+   }
 
-/* INTRO */
-.intro-section {
-    background: #f8eaea;
-    font-size: 1.05rem;
-    line-height: 1.7;
-}
+   .hero-section .hero-content {
+     position: relative;
+     color: #fff;
+     text-align: center;
+   }
 
-/* BENEFIT SECTION */
-.benefit-img-card {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-}
+   /* --- STRUKTUR MAIN & CSS UTAMA --- */
 
-.benefit-img-card img {
-    width: 100%;
-    height: auto;
-}
+   main {
+     width: 100%;
+     overflow-x: hidden;
+   }
 
-.overlay-text {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    background: rgba(0,0,0,0.4);
-    padding: 6px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-}
+   /* 1. SECTION HEADER / JUDUL & PENGERTIAN */
+   .service-header {
+     background-color: var(--primary-dark);
+     color: var(--primary-light);
+     padding: 80px 20px;
+     text-align: center;
+     position: relative;
+   }
 
-.benefit-box, .benefit-box-left {
-    background: #f9f0f0;
-    padding: 25px;
-    border-radius: 10px;
-}
+   .service-header::after {
+     /* Aksen garis kuning di bawah header */
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 100px;
+     height: 5px;
+     background-color: var(--yellow-accent);
+   }
 
-.decor-small {
-    width: 60px;
-    height: 40px;
-    background: url("assets/decor-small.svg");
-    background-size: cover;
-    margin-top: 15px;
-}
+   .service-header h1 {
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     font-weight: 700;
+   }
 
-.decor-box {
-    width: 100%;
-    height: 150px;
-    background: url("assets/decor-big.svg");
-    background-size: cover;
-    border-radius: 10px;
-}
+   .service-header p {
+     max-width: 700px;
+     margin: 0 auto;
+     font-size: 1.1rem;
+     opacity: 0.9;
+   }
 
-/* LAYANAN */
-.service-card {
-    background: #ffffff;
-    border-radius: 15px;
-}
+   /* 2. SECTION BENEFIT (4 Item) */
+   .benefits-section {
+     padding: 60px 20px;
+     background-color: var(--primary-light);
+   }
 
-/* CTA */
-.cta-section {
-    background: #fee;
-    padding-bottom: 100px;
-    position: relative;
-}
+   .container {
+     max-width: 1200px;
+     margin: 0 auto;
+   }
 
-.cta-decor {
-    width: 100%;
-    height: 100px;
-    background: url("assets/decor-row.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 40px;
-}
+   .section-title {
+     text-align: center;
+     margin-bottom: 40px;
+     color: var(--primary-dark);
+   }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-    .hero-section .col-lg-6:first-child {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-}
+   .benefits-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 30px;
+   }
+
+   .benefit-card {
+     background: var(--soft-bg);
+     padding: 30px;
+     border-radius: 8px;
+     text-align: center;
+     transition: transform 0.3s ease;
+     border-bottom: 3px solid transparent;
+   }
+
+   .benefit-card:hover {
+     transform: translateY(-5px);
+     border-bottom: 3px solid var(--primary-red);
+   }
+
+   .benefit-icon {
+     font-size: 2.5rem;
+     color: var(--primary-red);
+     margin-bottom: 20px;
+   }
+
+   .benefit-card h3 {
+     margin-bottom: 10px;
+     color: var(--primary-dark);
+   }
+
+   .benefit-card p {
+     font-size: 0.9rem;
+     color: var(--text-light);
+   }
+
+   /* 3. SECTION JENIS LAYANAN (4 Layanan) */
+   .services-list-section {
+     padding: 80px 20px;
+     background-color: var(--soft-bg);
+   }
+
+   .services-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 30px;
+   }
+
+   .service-card {
+     background: var(--primary-light);
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     display: flex;
+     flex-direction: column;
+     transition: 0.3s;
+   }
+
+   .service-card:hover {
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+   }
+
+   .service-image {
+     width: 100%;
+     height: 200px;
+     background-color: #ddd;
+     /* Fallback color */
+     object-fit: cover;
+   }
+
+   .service-content {
+     padding: 25px;
+     flex-grow: 1;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .service-content h3 {
+     color: var(--primary-dark);
+     margin-bottom: 10px;
+     font-size: 1.4rem;
+   }
+
+   .service-content p {
+     color: var(--text-light);
+     font-size: 0.95rem;
+     margin-bottom: 20px;
+     flex-grow: 1;
+   }
+
+   .service-btn {
+     align-self: flex-start;
+     text-decoration: none;
+     color: var(--primary-red);
+     font-weight: 600;
+     font-size: 0.9rem;
+     border-bottom: 2px solid var(--yellow-accent);
+     padding-bottom: 2px;
+     transition: 0.3s;
+   }
+
+   .service-btn:hover {
+     color: var(--primary-dark);
+     border-bottom-color: var(--primary-red);
+   }
+
+   /* 4. SECTION CTA (Call to Action) */
+   .cta-section {
+     background-color: var(--primary-red);
+     color: var(--primary-light);
+     padding: 60px 20px;
+     text-align: center;
+     background-image: linear-gradient(135deg, var(--primary-red) 0%, #d10000 100%);
+   }
+
+   .cta-content h2 {
+     font-size: 2rem;
+     margin-bottom: 15px;
+   }
+
+   .cta-content p {
+     margin-bottom: 30px;
+     font-size: 1.1rem;
+     max-width: 600px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .cta-button {
+     display: inline-block;
+     background-color: var(--yellow-accent);
+     color: var(--primary-dark);
+     padding: 15px 35px;
+     border-radius: 50px;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 1rem;
+     transition: transform 0.2s, box-shadow 0.2s;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   }
+
+   .cta-button:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+     background-color: #fff;
+   }
+
+   /* Responsive Design */
+   @media (max-width: 768px) {
+     .service-header h1 {
+       font-size: 2rem;
+     }
+
+     .service-header p {
+       font-size: 1rem;
+     }
+
+     .benefits-grid,
+     .services-grid {
+       grid-template-columns: 1fr;
+       /* Satu kolom di HP */
+     }
+   }
