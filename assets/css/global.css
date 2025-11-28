@@ -68,30 +68,27 @@ body {
 /* ==========================
    Hero Section
 ========================== */
-.hero {
-    height: 100vh;
+/* HERO */
+.hero-section {
+    position: relative;
+    height: 420px;
+    background: url('../img/hero.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    position: relative;
-    background: url('../assets/img/hero.jpg') center center no-repeat;
-    background-size: cover;
 }
 
-/* Overlay Merah */
-.hero::before {
+.hero-section::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,0,0,0.5);
-    z-index: 1;
+    background: rgba(255, 0, 0, 0.35);
 }
 
-.hero .hero-content {
+.hero-section .hero-content {
     position: relative;
-    z-index: 2;
-    color: var(--primary-light);
+    color: #fff;
+    text-align: center;
 }
 
 /* ==========================

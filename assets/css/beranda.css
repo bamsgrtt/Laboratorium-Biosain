@@ -84,7 +84,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,0,0,0.5);
+    background: rgba(255,0,0,0.35);
     z-index: 1;
 }
 
@@ -110,7 +110,6 @@ body {
     background-color: var(--primary-red);
     color: var(--primary-light);
 }
-
 /* ==========================
    Section Umum
 ========================== */
