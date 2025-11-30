@@ -17,3 +17,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            const url = this.getAttribute("href");
+
+            // abaikan anchor, telp, email, dan javascript void
+            if (!url || url.startsWith("#") || url.startsWith("tel:") || url.startsWith("mailto:") || url === "javascript:void(0)") {
+                return;
+            }
+
+            // tampilkan loading
+            document.getElementById("loading-screen").style.display = "flex";
+        });
+  });
+
+
+  document.body.classList.add("loading");
+  document.getElementById("loading-screen").style.display = "flex";
+
+  window.addEventListener("load", () => {
+    document.getElementById("loading-screen").style.display = "none";
+    document.body.classList.remove("loading");
+  });
+

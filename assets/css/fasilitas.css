@@ -1,9 +1,21 @@
+.hero-section .hero-content {
+    color: white;
+    z-index: 2;
+    position: relative;
+}
 
+<<<<<<< HEAD
 .hero-section .section-content {
     color: white;
     z-index: 2;
     position: relative;
 }
+=======
+.card img {
+            height: 200px;
+            object-fit: cover;
+        }
+>>>>>>> 339df14cb2854c291eee1f9d440ab1ca0eb1512f
 /* ===================================================
 
 
