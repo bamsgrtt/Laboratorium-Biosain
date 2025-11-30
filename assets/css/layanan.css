@@ -39,11 +39,6 @@ background: linear-gradient(0deg, rgba(255, 0, 0, 0.60) 100%, rgba(255, 255, 255
 
    /* --- STRUKTUR MAIN & CSS UTAMA --- */
 
-   main {
-     width: 100%;
-     overflow-x: hidden;
-   }
-
    /* 1. SECTION HEADER / JUDUL & PENGERTIAN */
    .service-header {
      background-color: var(--primary-dark);
