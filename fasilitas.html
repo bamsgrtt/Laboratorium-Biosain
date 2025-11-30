@@ -1,180 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fasilitas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/fasilitas.css">
-</head>
-
-<body>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fasilitas Laboratorium</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/fasilitas.css" />
+    <style>
+      body {
+        background-color: #f8f1f1;
+      }
+      .hero {
+        padding: 80px 0;
+        text-align: center;
+      }
+      .category-title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 1.8rem;
+      }
+      .facility-card {
+        border-radius: 15px;
+        padding: 25px;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+        min-height: 160px;
+      }
+      .facility-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      }
+      .facility-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #d14e64;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
     <div data-include="partials/navbar.html"></div>
 
+    <!-- HERO SECTION -->
     <section class="hero-section">
-        <div class="hero-content container">
-            <h1 class="fw-bold display-5">Fasilitas</h1>
-            <p class="mt-3 fs-5">Alat-alat di Laboratorium Biosains Politeknik Negeri Jember</p>
-        </div>
+      <div class="hero-content container">
+        <h1 class="fw-bold">Fasilitas</h1>
+        <p class="mt-3 fs-5">
+          Instrumen dan peralatan pendukung penelitian biologi & kimia
+        </p>
+      </div>
     </section>
 
-    <main class="content my-5">
-        <div class="container">
-
-            <section class="section alat-alat mb-5">
-                <div class="text-center mb-4">
-                    <h2 class="section-title fw-bold">Alat - Alat</h2>
-                    <p class="subtitle text-muted">Alat-alat di Laboratorium Biosains Politeknik Negeri Jember</p>
-                </div>
-                <!-- hero section -->
-
-
-                <div class="row g-3">
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Spektrofotometer UV-Vis</h3>
-                            <p class="mb-0 text-muted small">Mengukur absorbansi dan konsentrasi larutan berdasarkan
-                                spektrum UV-Vis.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Microplate Reader</h3>
-                            <p class="mb-0 text-muted small">Membaca sinyal optik pada microplate untuk uji ELISA dan
-                                analisis enzim.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Gel Imaging System</h3>
-                            <p class="mb-0 text-muted small">Mendokumentasikan hasil gel elektroforesis DNA/RNA atau
-                                protein.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Microcentrifuge</h3>
-                            <p class="mb-0 text-muted small">Memisahkan sampel kecil dalam tabung reaksi menggunakan
-                                gaya sentrifugal.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Incubator Anaerobik</h3>
-                            <p class="mb-0 text-muted small">Menumbuhkan mikroba dalam kondisi tanpa oksigen.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Rotary Evaporator</h3>
-                            <p class="mb-0 text-muted small">Menghilangkan pelarut dengan suhu rendah dan tekanan vakum.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">PCR (96 wells)</h3>
-                            <p class="mb-0 text-muted small">Amplifikasi DNA dengan kapasitas 96 sampel.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Real-Time PCR</h3>
-                            <p class="mb-0 text-muted small">PCR dengan deteksi kuantitatif menggunakan fluoresensi.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Elektroforesis</h3>
-                            <p class="mb-0 text-muted small">Memisahkan DNA/RNA/protein berdasarkan ukuran dan muatan.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Oven</h3>
-                            <p class="mb-0 text-muted small">Mengeringkan atau memanaskan sampel dengan suhu terkontrol.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Mikroskop Cahaya</h3>
-                            <p class="mb-0 text-muted small">Mengamati sampel mikroskopis secara visual.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="p-3 border rounded shadow-sm h-100 alat-card">
-                            <h3 class="fs-5 fw-semibold">Centrifuge</h3>
-                            <p class="mb-0 text-muted small">Memisahkan sampel kapasitas besar (15–50 ml).</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-            <section class="section laboratorium mb-5">
-                <h2 class="section-title fw-bold text-center mb-4">Laboratorium</h2>
-
-                <div class="row justify-content-center g-4">
-
-                    <div class="col-md-6">
-                        <div class="card h-100 shadow-lg lab-card-custom">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex align-items-center justify-content-center bg-light p-3">
-                                    <img src="assets/img/lab1.svg" class="img-fluid rounded-start"
-                                        alt="Laboratorium 1">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body lab-info">
-                                        <h3 class="card-title fw-semibold">Laboratorium</h3>
-                                        <p class="card-text">Laboratorium yang dirancang untuk mendukung aktivitas
-                                            penelitian di lingkungan terkontrol dan dilengkapi peralatan utama.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card h-100 shadow-lg lab-card-custom">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex align-items-center justify-content-center bg-light p-3">
-                                    <img src="assets/img/lab2.svg" class="img-fluid rounded-start"
-                                        alt="Laboratorium 2">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body lab-info">
-                                        <h3 class="card-title fw-semibold">Laboratorium</h3>
-                                        <p class="card-text">Laboratorium dengan fasilitas riset lengkap untuk mendukung
-                                            praktikum dan penelitian biosains.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
+    <div class="container">
+      <!-- KATEGORI 1 -->
+      <h2 class="category-title">Instrumen Analisis</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-microscope"></i>
+            </div>
+            <h5 class="fw-bold">Spektrofotometer UV-Vis</h5>
+            <p>
+              Mengukur absorbansi dan konsentrasi larutan berdasarkan spektrum
+              UV-Vis.
+            </p>
+          </div>
         </div>
-    </main>
 
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-vial-circle-check"></i>
+            </div>
+            <h5 class="fw-bold">Microplate Reader</h5>
+            <p>Membaca sinyal optik untuk uji ELISA dan analisis enzim.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <h5 class="fw-bold">Gel Imaging System</h5>
+            <p>
+              Mendokumentasikan hasil gel elektroforesis DNA/RNA atau protein.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- KATEGORI 2 -->
+      <h2 class="category-title">Preparasi & Pemurnian Sampel</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-flask-vial"></i>
+            </div>
+            <h5 class="fw-bold">Rotary Evaporator</h5>
+            <p>Menghilangkan pelarut pada suhu rendah dengan tekanan vakum.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-circle-notch"></i>
+            </div>
+            <h5 class="fw-bold">Microcentrifuge</h5>
+            <p>Memisahkan sampel kecil menggunakan gaya sentrifugal.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-sync"></i>
+            </div>
+            <h5 class="fw-bold">Centrifuge</h5>
+            <p>Memisahkan sampel volume besar (15–50 ml).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- KATEGORI 3 -->
+      <h2 class="category-title">Kultur & Inkubasi</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-temperature-three-quarters"></i>
+            </div>
+            <h5 class="fw-bold">Incubator Anaerobik</h5>
+            <p>Menumbuhkan mikroba pada kondisi tanpa oksigen.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <h5 class="fw-bold">Oven</h5>
+            <p>Mengeringkan atau memanaskan sampel dengan suhu terkontrol.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h5 class="fw-bold">Mikroskop Cahaya</h5>
+            <p>Mengamati sampel mikroskopis secara visual.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-dna"></i>
+            </div>
+            <h5 class="fw-bold">PCR (96 wells)</h5>
+            <p>Amplifikasi DNA dengan kapasitas 96 sampel.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="facility-card">
+            <div class="benefit-icon-red">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h5 class="fw-bold">Elektroforesis</h5>
+            <p>Memisahkan DNA/RNA/protein berdasarkan ukuran dan muatan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KATEGORI 4 -->
+    <section class="container py-5">
+  <h2 class="category-title">Peralatan Umum Laboratorium</h2>
+  <div class="row g-4">
+    <!-- Lab 1 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm rounded-3 border-0">
+        <img
+          src="assets/img/lab1.svg"
+          class="card-img-top"
+          alt="Laboratorium Mikrobiologi"
+        />
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Laboratorium Mikrobiologi</h5>
+          <p class="card-text text-muted">
+            Difasilitasi dengan peralatan kultur, inkubator, biosafety cabinet,
+            dan alat steril untuk kegiatan praktikum mikroorganisme.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lab 2 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm rounded-3 border-0">
+        <img
+          src="assets/img/lab2.svg"
+          class="card-img-top"
+          alt="Laboratorium Kimia"
+        />
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Laboratorium Kimia</h5>
+          <p class="card-text text-muted">
+            Dilengkapi instrumen gelas, alat titrasi, hotplate, serta peralatan
+            analisis dasar untuk eksperimen kimia dan biokimia.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ruang Kelas -->
+    <div class="col-md-4">
+      <div class="card shadow-sm rounded-3 border-0">
+        <img
+          src="assets/img/kelas.svg"
+          class="card-img-top"
+          alt="Ruang Kelas"
+        />
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Ruang Kelas Teori</h5>
+          <p class="card-text text-muted">
+            Ruang kelas nyaman dilengkapi proyektor, papan tulis, dan kursi ergonomis untuk pembelajaran teori.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- footer -->
     <div data-include="partials/footer.html"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/components.js"></script>
-</body>
-
+  </body>
 </html>
