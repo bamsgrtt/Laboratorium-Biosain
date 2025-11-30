@@ -1,4 +1,9 @@
 
+.hero-section .section-content {
+    color: white;
+    z-index: 2;
+    position: relative;
+}
 /* ===================================================
 
 
