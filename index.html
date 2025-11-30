@@ -1,91 +1,108 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorium Biosain - Polije</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/beranda.css">
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/beranda.css">
 </head>
 
 <body>
-    <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-custom" id="main-nav">
-        <div class="container-fluid mx-3">
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom">
+        <div class="container-fluid">
+            <!-- Brand -->
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="assets/img/logo.png" alt="Logo" width="50" height="50"
-                    class="d-inline-block align-text-top me-2">
-                <div class="d-flex flex-column">
-                    <span class="title fw-bold">Pusat UPA Laboratorium Biosain</span>
-                    <small class="subtitle ">Politeknik Negeri Jember</small>
-                </div>
+                <img src="assets/img/logo.png" 
+     alt="Logo" 
+     width="50" 
+     height="50"
+     class="align-text-top me-2 d-none d-md-block">
 
+                <div class="lh-1">
+                    <span class="fw-bold d-block" style="font-size: clamp(0.9rem, 2vw, 1.2rem);">
+                        UPA Laboratorium Biosain
+                    </span>
+                    <small class="d-block" style="font-size: clamp(0.7rem, 1.5vw, 0.9rem);">
+                        Politeknik Negeri Jember
+                    </small>
+                </div>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Toggler (Mobile) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Offcanvas (Mobile) -->
+            <div class="offcanvas offcanvas-end d-lg-none" id="navMenu" style="width: 280px;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang</a></li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Produk</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../layanan.html">Layanan</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas.html">Fasilitas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../publikasi.html">Publikasi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../galeri.html">Galeri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>                       
+                    <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang</a></li>                       
+                
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Profile
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="tentang.html">Tentang</a></li>
-                            <li><a class="dropdown-item" href="galeri.html">Galeri</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Produk
-                        </a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Produk</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="layanan.html">Layanan</a></li>
                             <li><a class="dropdown-item" href="fasilitas.html">Fasilitas</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publikasi.html">Publikasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontak.html">Kontak</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="publikasi.html">Publikasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Header -->
-    <header class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content text-center">
-            <h1 class="fw-bold fs-1 text-white">PUSAT UPA Lab Biosain</h1>
-            <p class="lead text-white text-center mx-auto" style="max-width: 1000px;">
+    <header class="hero" id="beranda">
+        <div class="hero-content container">
+            <h1 class="fw-bold display-4 text-white mb-4">PUSAT UPA Lab Biosain</h1>
+            <p class="lead text-white mx-auto" style="max-width: 900px;">
                 Selamat datang di laboratorium Biosain, Politeknik Negeri Jember. Kami harap Anda mendapatkan informasi
                 dalam menjelajahi situs web kami mengenai profil lab, layanan, dan menemukan berbagai aspek yang
                 tersedia termasuk informasi kontak laboratorium.
             </p>
         </div>
     </header>
+
     <!-- Stats Section -->
-    <section class="stats-section pt-2 py-5 position-relative">
-        <div class="overlay"></div>
-        <div class="container stats-content">
-            <div class="row justify-content-center ">
-                <div class="col-lg-10 section-red-bg rounded-5">
-                    <div class="stats-box p-4 rounded text-center bg-opacity-75 ">
-                        <div class="row">
+    <section class="stats-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-red-bg rounded-4 p-4 shadow-lg">
+                        <div class="row text-center">
                             <div class="col-md-4 mb-3 mb-md-0">
                                 <h2 class="stat-number">95%</h2>
                                 <p class="stat-text mb-0">Tingkat Kepuasan Pengguna</p>
@@ -96,7 +113,7 @@
                             </div>
                             <div class="col-md-4">
                                 <h2 class="stat-number">12+</h2>
-                                <p class="stat-text mb-0">Jenis Layanan Pengujian dan Analisis</p>
+                                <p class="stat-text mb-0">Jenis Layanan Pengujian</p>
                             </div>
                         </div>
                     </div>
@@ -106,66 +123,70 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section bg-white section-padding">
+    <section class="about-section bg-white section-padding" id="tentang">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-                    <img src="assets/img/about.png" alt="Tentang" class="img-fluid rounded shadow-lg"
-                        style="max-height: 350px;">
+                    <div class="bg-danger bg-opacity-10 rounded-4 p-5">
+                        <div class="display-1 text-danger">🔬</div>
+                        <h3 class="mt-3 text-danger fw-bold">Lab Biosain</h3>
+                    </div>
                 </div>
-                <div class="col-lg-6 text-lg-start text-center">
-                    <h2 class="text-dark fw-bold mb-3"><span class="text-red">Tentang</span> Laboratorium Biosain</h2>
-                    <p class="text-dark">
+                <div class="col-lg-6">
+                    <h2 class="text-dark fw-bold mb-4">
+                        <span class="text-red">Tentang</span> Laboratorium Biosain
+                    </h2>
+                    <p class="text-dark mb-3">
                         Laboratorium Biosain Politeknik Negeri Jember adalah pusat penelitian dan pengujian ilmiah di
                         bidang biologi, kimia, dan biosains terapan. Kami mendukung kegiatan akademik, riset mahasiswa,
                         dan penelitian industri dengan fasilitas modern dan tenaga ahli berkompeten.
                     </p>
-                    <p class="text-dark">
+                    <p class="text-dark mb-4">
                         Laboratorium ini telah bekerja sama dengan berbagai lembaga penelitian dan menerapkan standar
                         internasional untuk memastikan hasil pengujian yang akurat, tepat waktu, dan dapat diandalkan.
                     </p>
-                    <a href="tentang.html" class="btn btn-custom-yellow mt-3">Selengkapnya</a>
+                    <a href="#layanan" class="btn btn-custom-yellow">Selengkapnya</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Layanan Section -->
-    <section class="layanan section-padding bg-soft">
+    <section class="layanan section-padding bg-soft" id="layanan">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold text-dark">Layanan Kami</h2>
-                <p class="text-secondary subtitle mx-auto" style="max-width: 800px;">
+                <h2 class="fw-bold text-dark mb-3">Layanan Kami</h2>
+                <p class="text-secondary mx-auto" style="max-width: 800px;">
                     Laboratorium Biosain Polije menyediakan layanan pengujian dan fasilitas penelitian untuk mendukung
                     akademik, industri, dan lembaga penelitian dengan standar internasional.
                 </p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 card-service shadow-sm h-100">
-
-                        <h3 class="h5 card-title fw-bold text-center">Analisis Laboratorium</h3>
-                        <p class="card-text text-muted text-center">
+                    <div class="card card-service p-4 shadow-sm h-100 text-center">
+                        <div class="text-danger mb-3" style="font-size: 3rem;">🧪</div>
+                        <h3 class="h5 fw-bold mb-3">Analisis Laboratorium</h3>
+                        <p class="text-muted">
                             Pengujian sampel biologis dan kimia menggunakan metode standar ISO/IEC 17025 untuk
                             penelitian, kualitas produk, dan identifikasi biologis.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 card-service shadow-sm h-100">
-
-                        <h3 class="h5 card-title fw-bold text-center">Praktikum & Penelitian</h3>
-                        <p class="card-text text-muted text-center">
+                    <div class="card card-service p-4 shadow-sm h-100 text-center">
+                        <div class="text-danger mb-3" style="font-size: 3rem;">🔬</div>
+                        <h3 class="h5 fw-bold mb-3">Praktikum & Penelitian</h3>
+                        <p class="text-muted">
                             Fasilitas laboratorium lengkap untuk kegiatan praktikum mahasiswa, penelitian kultur
                             jaringan, mikrobiologi, dan bioteknologi tanaman.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 card-service shadow-sm h-100">
-
-                        <h3 class="h5 card-title fw-bold text-center">Konsultasi Riset</h3>
-                        <p class="card-text text-muted text-center">
+                    <div class="card card-service p-4 shadow-sm h-100 text-center">
+                        <div class="text-danger mb-3" style="font-size: 3rem;">💡</div>
+                        <h3 class="h5 fw-bold mb-3">Konsultasi Riset</h3>
+                        <p class="text-muted">
                             Pendampingan metodologi penelitian, interpretasi hasil, dan rekomendasi analisis ilmiah
                             untuk mendukung penelitian akademik dan industri.
                         </p>
@@ -175,20 +196,20 @@
         </div>
     </section>
 
-    <section class="client-say section-padding bg-white py-5">
+    <!-- Testimonials -->
+    <section class="client-say section-padding bg-white">
         <div class="container">
-            <h2 class="text-center fw-bolder mb-5 text-green-dark">Apa Kata Klien Kami?</h2>
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-md-4 ">
-                    <div class="card h-100 shadow-sm border-2 p-4 card-hover-effect">
-                        <p class="card-text fst-italic text-secondary">
+            <h2 class="text-center fw-bold mb-5 text-green-dark">Apa Kata Klien Kami?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-4 card-hover-effect">
+                        <p class="fst-italic text-secondary mb-4">
                             "Laboratorium Biosain membantu kami menemukan fasilitas penelitian yang tepat! Prosesnya
                             sangat lancar dan timnya sangat membantu. Hasilnya akurat dan tepat waktu."
                         </p>
-                        <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex align-items-center mt-auto">
                             <div class="rounded-circle bg-warning d-flex justify-content-center align-items-center me-3 text-white fw-bold"
-                                style="width: 45px; height: 45px;">
+                                style="width: 50px; height: 50px; flex-shrink: 0;">
                                 AP
                             </div>
                             <div>
@@ -198,35 +219,33 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4 ">
-                    <div class="card h-100 shadow-sm border-2 p-4 card-hover-effect">
-                        <p class="card-text fst-italic text-secondary">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-4 card-hover-effect">
+                        <p class="fst-italic text-secondary mb-4">
                             "Pelayanan yang efisien dan dapat diandalkan. Sangat merekomendasikan Laboratorium Biosain
                             bagi siapa pun yang ingin melakukan penelitian ilmiah. Instrumennya sangat lengkap."
                         </p>
-                        <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex align-items-center mt-auto">
                             <div class="rounded-circle bg-warning d-flex justify-content-center align-items-center me-3 text-white fw-bold"
-                                style="width: 45px; height: 45px;">
+                                style="width: 50px; height: 50px; flex-shrink: 0;">
                                 SR
                             </div>
                             <div>
                                 <h6 class="mb-0 fw-bold text-green-dark">Siti Rahmawati</h6>
-                                <small class="text-muted">Mahasiswa/Mahasiswi Peneliti</small>
+                                <small class="text-muted">Mahasiswa Peneliti</small>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4 ">
-                    <div class="card h-100 shadow-sm border-2 p-4 card-hover-effect">
-                        <p class="card-text fst-italic text-secondary">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-4 card-hover-effect">
+                        <p class="fst-italic text-secondary mb-4">
                             "Menjadi penasihat terpercaya sepanjang proses penelitian. Timnya sangat profesional dan
                             berpengetahuan luas dalam bidang biologi molekuler."
                         </p>
-                        <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex align-items-center mt-auto">
                             <div class="rounded-circle bg-warning d-flex justify-content-center align-items-center me-3 text-white fw-bold"
-                                style="width: 45px; height: 45px;">
+                                style="width: 50px; height: 50px; flex-shrink: 0;">
                                 BS
                             </div>
                             <div>
@@ -236,58 +255,52 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-5 bg-white text-center">
+    <section class="py-5 bg-soft text-center" id="kontak">
         <div class="container">
             <h2 class="fw-bold mb-4">
                 Siap Melangkah ke <span class="text-danger">Inovasi Riset</span> Selanjutnya?
             </h2>
-            <a href="kontak.html" class="btn btn-custom-yellow btn-lg fw-bold">Mulai Sekarang</a>
+            <a href="#beranda" class="btn btn-custom-yellow btn-lg fw-bold">Mulai Sekarang</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <div data-include="partials/footer.html"></div>
+     <div data-include="partials/footer.html"></div>
 
-    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/components.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const nav = document.getElementById('main-nav');
-            function checkScroll() {
-                if (window.scrollY > 50) {
-                    nav.classList.add('scrolled');
-                } else {
-                    nav.classList.remove('scrolled');
-                }
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar-custom');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
-            checkScroll();
-            window.addEventListener('scroll', checkScroll);
         });
 
-        // News ticker
-        const track = document.getElementById('news-track');
-        const items = Array.from(track.children);
-        function scrollNews() {
-            const itemWidth = items[0].offsetWidth + 16;
-            track.style.transition = 'transform 1.5s linear';
-            track.style.transform = `translateX(-${itemWidth}px)`;
-            setTimeout(() => {
-                track.style.transition = 'none';
-                track.appendChild(items.shift());
-                items.push(track.lastElementChild);
-                track.style.transform = 'translateX(0)';
-                setTimeout(scrollNews, 2000);
-            }, 1600);
-        }
-        setTimeout(scrollNews, 2000);
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close offcanvas if open
+                    const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('navMenu'));
+                    if (offcanvas) offcanvas.hide();
+                }
+            });
+        });
     </script>
+    <script src="assets/js/components.js"></script>
 </body>
-
 </html>

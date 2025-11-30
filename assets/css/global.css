@@ -1,185 +1,216 @@
-/* ==========================
-   Warna Tema Kustom
-========================== */
-:root {
-    --primary-red: #ff0000;
-    --primary-dark: #1D3557;
-    --primary-light: #ffffff;
-    --yellow-accent: #ffea00;
-    --soft-bg: #f8eaea;
-    --text-dark: #333333;
-}
+/* =====================================
+           WARNA TEMA
+        ===================================== */
+        :root {
+            --primary-red: #ff0000;
+            --primary-dark: #1D3557;
+            --primary-light: #ffffff;
+            --yellow-accent: #ffea00;
+            --soft-bg: #f8eaea;
+            --text-dark: #333333;
+        }
 
-/* ==========================
-   Body & Background Umum
-========================== */
-body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+        /* =====================================
+           BODY
+        ===================================== */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--soft-bg);
+            margin: 0;
+            padding: 0;
+        }
 
-/* ==========================
-   Navbar Kustom
-========================== */
-.navbar-custom {
-    transition: background-color 0.3s, box-shadow 0.3s;
-    background-color: var(--primary-red) !important;
-}
+        /* =====================================
+           NAVBAR
+        ===================================== */
+        .navbar-custom {
+            background-color: var(--primary-red) !important;
+            transition: 0.3s;
+        }
 
-.navbar-custom .nav-link,
-.navbar-custom .navbar-brand {
-    color: var(--primary-light) !important;
-}
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: var(--primary-light) !important;
+        }
 
-.navbar-custom .nav-link:hover,
-.navbar-custom .nav-link:focus {
-    color: var(--yellow-accent) !important;
-}
+        .navbar-custom .nav-link:hover {
+            color: var(--yellow-accent) !important;
+        }
 
-/* Navbar ketika scroll */
-.navbar-custom.scrolled {
-    background-color: var(--primary-red) !important;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-}
+        .navbar-custom.scrolled {
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
 
-/* Dropdown merah */
-.navbar-custom .dropdown-menu {
-    --bs-dropdown-bg: var(--primary-red) !important;
-    --bs-dropdown-border-color: transparent !important;
-}
+        .navbar-custom .dropdown-menu {
+            background-color: var(--primary-red) !important;
+            border: none !important;
+        }
 
-.navbar-custom .dropdown-item {
-    color: #fff !important;
-}
+        .navbar-custom .dropdown-item {
+            color: #fff !important;
+        }
 
-.navbar-custom .dropdown-item:hover {
-    background: var(--primary-red) !important;
-    color: var(--yellow-accent) !important;
-}
+        .navbar-custom .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            color: var(--yellow-accent) !important;
+        }
 
-/* Toggle Navbar kecil di HP */
-.navbar-toggler {
-    border: none;
-    font-size: 1.2rem;
-}
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
 
-/* ==========================
-   Hero Section
-========================== */
-/* HERO */
-.hero-section {
-    position: relative;
-    height: 420px;
-    background: url('../img/hero.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .offcanvas {
+            background-color: var(--primary-red) !important;
+        }
 
-.hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 0, 0, 0.35);
-}
+        .offcanvas .btn-close {
+            filter: brightness(0) invert(1);
+        }
 
-.hero-section .hero-content {
-    position: relative;
-    color: #fff;
-    text-align: center;
-}
+        .offcanvas-title {
+            color: white;
+        }
 
-/* ==========================
-   Section Umum
-========================== */
-.section-padding {
-    padding: 80px 0;
-}
+        /* =====================================
+           HERO SECTION
+        ===================================== */
+        .hero {
+            position: relative;
+            background: url('../img/hero.webp') center center/cover no-repeat;
+            padding: 120px 20px;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
 
-.bg-soft {
-    background-color: var(--soft-bg);
-}
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            
+            background: linear-gradient(
+            180deg,
+            rgba(255, 0, 0, 0.75) 0%,
+            rgba(255, 0, 0, 0.35) 40%,
+            rgba(255, 0, 0, 0.10) 70%,
+            rgba(255, 255, 255, 0) 100%
+);
 
-/* ==========================
-   Stats Section
-========================== */
-.stats-section {
-    position: relative;
-    background-image: url('../assets/img/lab-biosain-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 80px 0;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 40px 0;
-}
+            z-index: 1;
+        }
 
-.stats-content {
-    position: relative;
-    z-index: 2;
-}
+   
+        .hero .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
 
-.stat-number {
-    font-size: 48px;
-    font-weight: 800;
-    color: white;
-}
+        /* =====================================
+           SECTION GLOBAL
+        ===================================== */
+        .section-padding {
+            padding: 80px 0;
+        }
 
-.stat-text {
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-}
+        .bg-soft {
+            background-color: var(--soft-bg);
+        }
 
-/* ==========================
-   Cards Layanan & Testimonial
-========================== */
-.card-service {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-}
+        .text-red {
+            color: var(--primary-red) !important;
+        }
 
-.card-service:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
-}
+        .text-green-dark {
+            color: var(--primary-dark) !important;
+        }
 
-.card-service .icon {
-    width: 60px;
-    height: 60px;
-    border: 2px solid var(--primary-red);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    color: var(--primary-red);
-}
+        /* =====================================
+           STATS SECTION
+        ===================================== */
+        .stats-section {
+            position: relative;
+            padding: 40px 0;
+            margin-top: -80px;
+            z-index: 10;
+        }
 
-/* Testimonials */
-.testimonial-card {
-    border-left: 4px solid var(--primary-red);
-    border-radius: 0.5rem;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-}
+        .section-red-bg {
+            background-color: var(--primary-red) !important;
+            transition: 0.3s;
+        }
 
-.testimonial-rating {
-    color: #ffc800;
-}
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+        }
 
-.card-hover-effect {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        .stat-text {
+            font-size: 18px;
+            color: white;
+        }
 
-.card-hover-effect:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25) !important;
-}
+        /* =====================================
+           ABOUT SECTION
+        ===================================== */
+        .about-section img {
+            max-height: 350px;
+            object-fit: cover;
+        }
 
-/* ==========================
+        /* =====================================
+           BUTTON CUSTOM
+        ===================================== */
+        .btn-custom-yellow {
+            background-color: var(--yellow-accent);
+            color: var(--text-dark);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-custom-yellow:hover {
+            background-color: #ffd700;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 234, 0, 0.4);
+        }
+
+        /* =====================================
+           CARD LAYANAN
+        ===================================== */
+        .card-service {
+            border: none;
+            transition: 0.3s ease;
+            background-color: white;
+        }
+
+        .card-service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1.5rem rgba(255, 0, 0, 0.2);
+        }
+
+        /* =====================================
+           TESTIMONIALS
+        ===================================== */
+        .card-hover-effect {
+            transition: 0.3s ease;
+            border: 2px solid #e0e0e0;
+        }
+
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+            border-color: var(--primary-red);
+        }
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+       /* ==========================
    Footer
 ========================== */
 footer {
@@ -200,14 +231,41 @@ footer a:hover {
     color: var(--yellow-accent);
 }
 
-/* ==========================
-   Responsive Typography Navbar
-========================== */
-@media (max-width: 768px) {
-    .navbar-brand .title {
-        font-size: 0.9rem;
-    }
-    .navbar-brand .subtitle {
-        font-size: 0.7rem;
-    }
-}
+        /* =====================================
+           RESPONSIVE
+        ===================================== */
+        @media (max-width: 768px) {
+            .stats-section {
+                margin-top: -40px;
+            }
+            
+            .stat-number {
+                font-size: 36px;
+            }
+            
+            .stat-text {
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 50vh;
+                padding: 80px 20px;
+            }
+
+            .section-padding {
+                padding: 50px 0;
+            }
+        }
+
+        /* Logo placeholder */
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ffea00, #ffd700);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--primary-red);
+        }
